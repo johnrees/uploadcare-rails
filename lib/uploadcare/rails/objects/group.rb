@@ -49,14 +49,6 @@ module Uploadcare
         table
       end
 
-      def to_json
-        marshal_dump
-      end
-
-      def as_json(_options = {})
-        marshal_dump
-      end
-
       # override default to string method
       # for group we just will return the uuid
       def to_s
